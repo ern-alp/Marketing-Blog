@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP DAHİL ETME KISMI -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS DAHİL ETME KISMI -->
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- FAV İCON DAHİL ETME KISMI -->
+    <link rel="shortcut icon" type="images/jpg" href="images/logo.png">
+    <!-- FONTAWSOME CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <!---------- HEADER SECTİON BAŞLANGIÇ ---------->
+    <header>
+        <div class="nav nav-box-shadow">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <img src="images/logo.png" class="navbar-brand-img" alt="Logo" />
+                </div>
+                <h3 class="nav-title">Jonah Altman</h3>
+            </div>
+
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="work-with-me.html">Work With Me</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+
+            <div id="search-wrapper">
+                <i class="search-icon fas fa-search"></i>
+                <input type="text" id="search" placeholder="Search">
+                <button id="search-button">Search</button>
+            </div>
+
+        </div>
+    </header>
+    <!---------- HEADER SECTİON BİTİŞ ---------->
+    <!---------- CONTACT SECTION BAŞLANGIÇ ---------->
+    <div class="outer-container">
+        <div class="inner contact">
+
+            <div class="contact-form">
+                <form id="contact-us" method="post" action="#">
+                    <div class="title">
+                        <h2>Contact Me Here</h2>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" required="required" class="form" placeholder="Name">
+                        <input type="email" name="mail" id="mail" required="required" class="form"
+                            placeholder="Email" />
+                        <input type="text" name="subject" id="subject" required="required" class="form"
+                            placeholder="Subject" />
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" class="form textarea" placeholder="Message"></textarea>
+                    </div>
+                    <div class="relative fullwidth">
+                        <a href="#" class="btn">Submit</a>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!---------- CONTACT SECTION BİTİŞ ---------->
+    <!---------- FOOTER BAŞLANGIÇ ---------->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="logo-text">Company</h2>
+                <p>Pazarlama dünyasındaki son trendler, ipuçları ve stratejileri hakkında güncel bilgiler.</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/?locale=tr_TR" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://twitter.com/?logout=1715351454485" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/home?originalSubdomain=tr" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <br>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work-with-me.html">Work With Me</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <br>
+                <div class="contact-item">
+                    <span><i class="fa fa-phone"></i> &nbsp; +123 456 789</span>
+                </div>
+                <div class="contact-item">
+                    <span><i class="fa fa-envelope"></i> &nbsp; info@company.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2023 Company | Designed by Company
+        </div>
+    </footer>
+    <!---------- FOOTER BİTİŞ ---------->
+
+    <!-- JAVASCRİPT DAHİL ETME KISMI -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

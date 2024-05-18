@@ -1,0 +1,659 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --red-color: #e84242;
+  --grey-color: #1f232c;
+  --border: 0.1rem solid rgba(31, 35, 44, 1);
+}
+
+/********** TEMEL HTML KODLARI BAŞLANGIÇ **********/
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/*! TÜM A ETİKETLERİNE UYGULANIR BU KOD*/
+a {
+  color: var(--grey-color);
+  text-decoration: none;
+}
+
+/*! TÜM BTNLERE UYGULANIR BU KOD*/
+.btn {
+  margin: -0.5rem 0 0 1.5rem;
+  display: inline-block;
+  padding: 1rem 4rem;
+  border-radius: 30rem;
+  font-size: 1.7rem;
+  color: black;
+  background-color: var(--red-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 0.2rem solid #fff;
+  transition: 0.3s ease;
+  background-color: transparent;
+  color: #fff;
+}
+
+/*! TÜM SEARCH-İNPUTLAR BURADA UYGULANIR */
+.search-input {
+  font-size: 1.6rem; /* 1.6rem = 16rem */
+  color: var(--grey-color);
+  padding: 1rem; /* 1rem = 10rem */
+  text-transform: none;
+  border-radius: 3rem; /* 3rem = 30rem */
+}
+
+/********** HEADER BAŞLANGIÇ **********/
+header {
+  margin-bottom: 8.5rem; /* 8.5rem = 85rem */
+}
+.nav {
+  width: 100%;
+  background-color: var(--grey-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 7rem; /* 7rem = 70rem */
+  z-index: 99;
+}
+.nav-box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 2rem; /* 2rem = 20rem */
+  color: #fff;
+  padding: 1rem 1rem 1rem 1rem;
+  cursor: pointer;
+}
+
+.navbar-brand-img {
+  width: auto;
+  height: 3.5rem; /* 3.5rem = 35rem */
+  margin: -0.2rem auto auto 2.5rem;
+  background-repeat: no-repeat;
+  filter: invert(1); /* Beyaz yapmak için */
+}
+
+.nav > .nav-items {
+  display: inline-block;
+  font-size: 1.8rem; /* 1.8rem = 18rem */
+  margin-right: 2.5rem; /* 2.5rem = 25rem */
+}
+.nav > .nav-items > a,
+.nav > .nav-items > label {
+  display: inline-block;
+  padding: 1.3rem 1rem 1.3rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-items a.active {
+  color: var(--red-color);
+}
+
+.nav > .nav-items > a:hover,
+.nav-items > label:hover {
+  color: var(--red-color);
+}
+
+#search-wrapper {
+  display: flex;
+  border: 0.1rem solid rgba(0, 0, 0, 0.276);
+  align-items: stretch;
+  border-radius: 5rem; /* 5rem = 50rem */
+  background-color: #fff;
+  overflow: hidden;
+  max-width: 30rem; /* 30rem = 300rem */
+  box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, 0.273);
+}
+
+#search {
+  border: none;
+  width: 35rem; /* 35rem = 350rem */
+  font-size: 1.5rem; /* 1.5rem = 15rem */
+}
+
+#search:focus {
+  outline: none;
+}
+
+.search-icon {
+  margin: 1rem; /* 1rem = 10rem */
+  color: var(--grey-color);
+}
+
+#search-button {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--red-color);
+  padding: 0px 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+/********** HEADER BİTİŞ **********/
+/********** BUSİNESS STRATEGY BAŞLANGIÇ **********/
+.business-strategy .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Bir satıra ya da sütuna sığmadığında bir sonraki satıra veya sütuna geçerek yerleştirilir.  */
+  column-gap: 2rem;
+  min-height: 99vh; /*! Görüldüğü yer kadar alan kaplar */
+  background: var(--grey-color);
+  margin-top: -5rem;
+}
+
+.business-strategy .row .content h3 {
+  font-size: 4rem;
+  padding-left: 5rem;
+  font-weight: bold;
+  line-height: 6rem;
+  color: #fff;
+}
+
+.business-strategy .row .image {
+  flex: 1 1 45rem;
+}
+
+.business-strategy .row img {
+  width: 100%;
+}
+
+.business-strategy .row .content {
+  flex: 1 1 45rem;
+}
+
+.business-strategy .row .content h3 span {
+  color: var(--red-color);
+}
+/********** BUSİNESS STRATEGY BİTİŞ **********/
+/********** MARKETİNG STRATEGY BAŞLANGIÇ **********/
+.marketing-strategy .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  min-height: 99vh; /*! Görüldüğü yer kadar alan kaplar */
+}
+
+.marketing-strategy .row .content h3 {
+  font-size: 2.5rem;
+  line-height: 6rem;
+  padding: 5rem 0 0 5rem;
+  font-weight: bold;
+  color: var(--red-color);
+}
+
+.marketing-strategy .row .content p {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  padding: 0 0 0 5rem;
+}
+
+.marketing-strategy .row .image {
+  flex: 1 1 45rem;
+}
+
+.marketing-strategy .row img {
+  width: 100%;
+}
+
+.marketing-strategy .row .content {
+  flex: 1 1 45rem;
+}
+/********** MARKETİNG STRATEGY BİTİŞ **********/
+/********** DİGİTAL PRESENCE BAŞLANGIÇ **********/
+.digital-presence .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  min-height: 99vh; /*! Görüldüğü yer kadar alan kaplar */
+}
+
+.digital-presence .row .content h3 {
+  font-size: 2.5rem;
+  line-height: 6rem;
+  padding: 10rem 0 0 5rem;
+  font-weight: bold;
+  color: var(--red-color);
+}
+
+.digital-presence .row .content p {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  padding: 0 0 0 5rem;
+}
+
+.digital-presence .row .image {
+  flex: 1 1 45rem;
+}
+
+.digital-presence .row img {
+  width: 90%;
+}
+
+.digital-presence .row .content {
+  flex: 1 1 45rem;
+}
+/********** DİGİTAL PRESENCE BİTİŞ **********/
+/********** EMAİL COPYWRİTİNG BAŞLANGIÇ **********/
+.email-copywriting .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  min-height: 99vh; /*! Görüldüğü yer kadar alan kaplar */
+}
+
+.email-copywriting .row .content h3 {
+  font-size: 2.5rem;
+  line-height: 6rem;
+  padding: 5rem 0 0 5rem;
+  font-weight: bold;
+  color: var(--red-color);
+}
+
+.email-copywriting .row .content p {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  padding: 0 0 0 5rem;
+}
+
+.email-copywriting .row .image {
+  flex: 1 1 45rem;
+}
+
+.email-copywriting .row img {
+  width: 80%;
+}
+
+.email-copywriting .row .content {
+  flex: 1 1 45rem;
+}
+/********** EMAİL COPYWRİTİNG BİTİŞ **********/
+/********** CONTACT İNFO BAŞLANGIÇ **********/
+.contact-info .background {
+  background-color: #e6f0ff;
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info .background h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--grey-color);
+}
+
+.contact-info .background .btn {
+  border: 0.2rem solid var(--grey-color);
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+
+.contact-info .background .btn:hover {
+  color: var(--grey-color);
+}
+/********** CONTACT İNFO BİTİŞ **********/
+/********** FOOTER BAŞLANGIÇ **********/
+.footer {
+  background: var(--grey-color);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+.footer .footer-section {
+  flex: 1;
+  padding: 1rem;
+  min-width: 25rem;
+}
+
+.footer .logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--red-color);
+}
+
+.footer-section p {
+  font-size: 1.5rem;
+}
+
+.socials a {
+  font-size: 2rem;
+}
+
+.footer-section li a {
+  font-size: 1.5rem;
+}
+
+.links {
+  color: var(--red-color);
+}
+
+.contact h2 {
+  color: var(--red-color);
+}
+
+.footer-section .contact-item {
+  font-size: 1.5rem;
+}
+
+.footer .socials a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .socials a:hover {
+  color: var(--red-color);
+}
+
+.footer .footer-section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer .footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .footer-section ul li a:hover {
+  color: var(--red-color);
+}
+
+.footer .contact-item {
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+/********** FOOTER BİTİŞ **********/
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+/********** RESPONSİVE BAŞLANGIÇ **********/
+@media only screen and (max-width: 1003px) {
+  .business-strategy .row .content h3 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-brand-img {
+    margin: -0.2rem auto auto 0.8rem;
+    background-repeat: no-repeat;
+  }
+
+  .nav > .nav-btn {
+    height: 7rem; /* 7rem = 70rem */
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding-top: 2rem; /* 2rem = 20rem */
+    padding-right: 2rem; /* 2rem = 20rem */
+  }
+
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    font-size: 2rem; /* 2rem = 20rem */
+    color: #111;
+    margin-bottom: 0;
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    border-top: 2px solid #fff;
+    height: 1rem; /* 1rem = 10rem */
+    width: 2.2rem; /* 2.2rem = 22rem */
+    transition: all 0.1s ease-in;
+  }
+
+  .nav > .nav-items {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #282828bc;
+    text-align: center;
+    transition: all 0.3s ease-in;
+    top: 7rem; /* 7rem = 70rem */
+    left: 0px;
+    z-index: 999 !important;
+  }
+
+  .nav > .nav-items > a,
+  .nav > .nav-items > label {
+    display: block;
+    width: 100%;
+  }
+
+  .nav > #nav-check:not(:checked) ~ .nav-items {
+    height: 0px;
+  }
+
+  .nav > #nav-check:not(:checked) ~ .nav-items a,
+  .nav > #nav-check:not(:checked) ~ .nav-items label {
+    display: none;
+  }
+
+  .nav > #nav-check:checked ~ .nav-btn > label > span:first-child {
+    transform: translateX(-3.5px) translateY(6px) rotate(45deg);
+  }
+
+  .nav > #nav-check:checked ~ .nav-btn > label > span:nth-child(2) {
+    display: none;
+  }
+
+  .nav > #nav-check:checked ~ .nav-btn > label > span:last-child {
+    transform: translateX(3px) translateY(-4px) rotate(-45deg);
+  }
+
+  .nav > #nav-check:checked ~ .nav-items {
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    z-index: 999 !important;
+  }
+
+  .nav > #nav-check:checked ~ .nav-items a,
+  .nav > #nav-check:checked ~ .nav-items label {
+    display: block;
+  }
+
+  input#nav-dropdown ~ ul {
+    position: static;
+    margin: auto;
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    border: 0.1rem solid #ddd;
+  }
+
+  .footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-section {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .footer .footer-section ul {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 904px) {
+  .business-strategy .row .content h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+    line-height: 5rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  section .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  section .row .image,
+  section .row .content {
+    flex: 1 1 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  section .row img {
+    width: 100%;
+    max-width: 45rem;
+    margin-bottom: 2rem;
+  }
+
+  section .row .content h3 {
+    margin: 2rem 0 1rem 0;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  section .row .content p {
+    margin: 1rem 0 2rem 0;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-info .background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-info .background h3 {
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  #search-wrapper {
+    margin-right: 10rem;
+  }
+
+  .footer .footer-content {
+    padding: 0 1rem;
+  }
+
+  .footer .footer-section {
+    min-width: 100%;
+  }
+
+  .footer .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  section {
+    display: block;
+    padding: 1rem;
+  }
+
+  section .row {
+    display: block;
+    width: 100%;
+  }
+
+  section .row .image,
+  section .row .content {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  section .row img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  section .row .content h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  section .row .content p {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+}
+/********** RESPONSİVE BİTİŞ **********/
